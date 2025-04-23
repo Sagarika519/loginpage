@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Login and Sign Up</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            margin-top: 50px;
+        }
+
+        .container {
+            display: flex;
+            gap: 40px;
+        }
+
+        .form-box {
+            border: 1px solid #ccc;
+            padding: 20px;
+            border-radius: 8px;
+            width: 300px;
+        }
+
+        .form-box h2 {
+            text-align: center;
+        }
+
+        .form-box input[type="text"],
+        .form-box input[type="password"] {
+            width: 100%;
+            padding: 8px;
+            margin: 8px 0;
+        }
+
+        .form-box input[type="submit"] {
+            padding: 8px 16px;
+            margin-top: 10px;
+        }
+
+        .form-box p {
+            font-size: 14px;
+        }
+
+        .form-box a {
+            text-decoration: none;
+            
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- Login Form -->
+        <div class="form-box">
+            <h2>Login Form</h2>
+            <form>
+                <label for="login-userid">User ID:</label><br>
+                <input type="text" id="login-userid" name="login-userid"><br>
+                <label for="login-password">Password:</label><br>
+                <input type="password" id="login-password" name="login-password"><br>
+                <input type="submit" value="Login"><br><br>
+                <p>Don't have an account? <a href="#">Sign up here</a></p>
+            </form>
+        </div>
+
+        <!-- Sign Up Form -->
+        <div class="form-box">
+            <h2>Sign Up Form</h2>
+            <form>
+                <label for="signup-name">Name:</label><br>
+                <input type="text" id="signup-name" name="signup-name"><br>
+                <label for="signup-userid">User ID:</label><br>
+                <input type="text" id="signup-userid" name="signup-userid"><br>
+                <label for="signup-password">Password:</label><br>
+                <input type="password" id="signup-password" name="signup-password"><br>
+                <input type="submit" value="Sign Up">
+            </form>
+        </div>
+    </div>
+</body>
+</html>
